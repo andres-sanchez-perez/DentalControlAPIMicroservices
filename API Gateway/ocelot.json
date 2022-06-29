@@ -1,0 +1,68 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/Gateway/Inventarios/ObtenerProductoPorId/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 60639
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Inventarios/ObtenerProductoPorId/{everything}",
+      "DownstreamScheme": "http"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Gateway/Inventarios/ObtenerProductos",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 60639
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Inventarios/ObtenerProductos",
+      "DownstreamScheme": "http"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Gateway/Inventarios/AgregarProducto",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 22028
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Inventarios/AgregarProducto",
+      "DownstreamScheme": "http"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Gateway/Inventarios/EliminarPorducto/{everything}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 22028
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Inventarios/EliminarPorducto/{everything}",
+      "DownstreamScheme": "http"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Gateway/Inventarios/ActualizarProducto",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44300
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Inventarios/ActualizarProducto",
+      "DownstreamScheme": "http"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:60750"
+  }
+
+}

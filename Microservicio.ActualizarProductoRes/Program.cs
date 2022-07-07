@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace API_Gateway
+namespace Microservicio.ActualizarProductoRes
 {
     public class Program
     {
@@ -18,11 +18,6 @@ namespace API_Gateway
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hosting,config) =>
-                {
-                    config.AddJsonFile("ocelot.json", false, true)
-                    .AddEnvironmentVariables();
-                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

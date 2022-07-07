@@ -25,17 +25,14 @@
       "DownstreamScheme": "http"
     },
     {
-
-      "UpstreamPathTemplate": "/api/Gateway/Inventarios/AgregarProducto",
       
+      "UpstreamPathTemplate": "/api/Gateway/Inventarios/AgregarProducto",
       "UpstreamHttpMethod": [ "POST" ],
-
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 22028
         }
-       
       ],
       "DownstreamPathTemplate": "/api/Inventarios/AgregarProducto",
       "DownstreamScheme": "http"
@@ -54,11 +51,9 @@
     },
     {
       "UpstreamPathTemplate": "/api/Gateway/Inventarios/ActualizarProducto",
-      "LoadBalancerOptions": {
-        "Type": "NoLoadBalancer"
-      },
       "UpstreamHttpMethod": [ "PUT" ],
       "DownstreamHostAndPorts": [
+
 
         {
           "Host": "localhost",
@@ -69,13 +64,12 @@
           "Port": 33933
         }
       ],
-
       "DownstreamPathTemplate": "/api/Inventarios/ActualizarProducto",
       "DownstreamScheme": "http"
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:60750",
-   
+    "BaseUrl": "http://localhost:60800",
+    
   }
 }
